@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+    background-color: #fef8f1;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    flex: 1;
+    text-align: left;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #3c3636;
+    text-decoration: none;
+    font-size: 15px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #956686;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.img1{
+    padding: 2% 6%;
+    width: 1000px;
+    align-items: center;
+}
+
+/*--signin page--*/
+
+.img-product{
+    flex-grow: 2;
+}
+
+.pname{
+    flex-grow: 1;
+}
+
+/* Grid for three products in a row */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Square with rounded corners as background for each product */
+  .product-card {
+    background-color: rgb(255, 215, 82);
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+  }
+  
+  /* Stacked product information and image */
+  .product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .product-info p {
+    margin: 0;
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .product-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+/* CSS for the form sections */
+.signup-form {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 30px;
+    width: 50%;
+    max-width: 500px;
+  }
+  
+  .signup-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .signup-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .signup-form form input[type="text"],
+  .signup-form form input[type="email"],
+  .signup-form form input[type="password"],
+  .signup-form form input[type="date"] {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e6e6e6;
+    font-size: 16px;
+  }
+  
+  .signup-form form button[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .signup-form form button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .signup-form p {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .signup-form section:nth-of-type(2) {
+    margin-top: 40px;
+  }
+
+.index-page{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.cart{
+    padding:30px;
+}
+.findus{
+    padding: 20px;
+    font-size: 24px;
+}
+.map{
+    padding: 10px;
+}
